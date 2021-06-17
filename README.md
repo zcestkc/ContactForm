@@ -1,8 +1,8 @@
 <!-- PROJECT LOGO -->
 <p align="center">
   <h3 align="center">ContactForm</h3>
-  <a href="https://kwanchan.co/reddit-client/">
-    <img src='display.png' width='100%'>
+  <a href="https://kwanchan.co/form/">
+    <img src='display.png' width='100%' align='center'>
   </a>
   <p align="center">
     Simple contact form built with HTML, CSS, JavaScript, PHP
