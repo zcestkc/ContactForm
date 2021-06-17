@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Company Directory" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+    <meta name="author" content="KwanChan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form
+      id="form"
+      action="contactform.php"
+      method="post"
+      onsubmit="return checkInputs()"
+      enctype="multipart/form-data"
+    >
+      <div class="wrapper">
+        <div class="form-control">
+          <label for="fname">First name<span>required</span></label
+          ><br />
+          <input type="text" id="fname" name="fname" autofocus />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="lname">Last name<span>required</span></label
+          ><br />
+          <input type="text" id="lname" name="lname" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email<span>required</span></label
+          ><br />
+          <input type="text" id="email" name="email" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="phone">Phone</label><br />
+          <input type="tel" id="phone" name="phone" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="address-one">Address 1</label><br />
+          <input type="text" id="address-one" name="address-one" />
+        </div>
+        <div class="form-control">
+          <label for="address-two">Address 2</label><br />
+          <input type="text" id="address-two" name="address-two" />
+        </div>
+        <div class="form-control">
+          <label for="town">Town</label><br />
+          <input type="text" id="town" name="town" />
+        </div>
+        <div class="form-control">
+          <label for="county">County</label><br />
+          <input type="text" id="county" name="county" />
+        </div>
+        <div class="form-control">
+          <label for="postcode">Postcode<span>required</span></label
+          ><br />
+          <input type="text" id="postcode" name="postcode" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="country">Country<span>required</span></label
+          ><br />
+          <select name="country" id="country">
+            <option value="" disabled selected>Select Country</option>
+          </select>
+          <small>Error message</small>
+        </div>
+      </div>
+      <div class="form-control">
+        <label for="message">Message</label><br />
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+      </div>
+      <div class="wrapper">
+        <div class="form-control">
+          <label for="file">Upload File<span>required</span></label
+          ><br />
+          <input
+            type="file"
+            id="file"
+            name="attachment"
+            accept=".png, .jpg, .jpeg, .docx, .doc, .pdf"
+          />
+          <small>Error message</small>
+        </div>
+      </div>
+      <div class="form-control wrapper">
+        <input type="submit" value="SUBMIT" name="submit" />
+      </div>
+    </form>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

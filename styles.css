@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+form {
+  max-width: fit-content;
+  margin: 12px auto;
+}
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+span {
+  color: gray;
+  padding-left: 5px;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+}
+select,
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  box-sizing: border-box;
+}
+select:focus,
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 4px gray;
+  outline: none;
+}
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+.form-control.error small {
+  visibility: visible;
+}
+input[type='submit'] {
+  font-size: 1.5rem;
+  border-color: rgb(59, 228, 59);
+  background-color: #ffffff;
+  color: rgb(59, 228, 59);
+  transition: all 0.3s;
+}
+input[type='submit']:hover,
+input[type='submit']:focus {
+  background-color: rgb(59, 228, 59);
+  color: #ffffff;
+}
+input[type='submit']:active {
+  border-color: gray;
+  background-color: gray;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
