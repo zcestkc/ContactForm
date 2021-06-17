@@ -2,7 +2,7 @@
 <p align="center">
   <h3 align="center">ContactForm</h3>
   <a href="https://kwanchan.co/reddit-client/">
-    <img src='display.png' width='100%' >
+    <img src='display.png' width='50%' >
   </a>
   <p align="center">
     Simple contact form built with HTML, CSS, JavaScript, PHP
@@ -28,7 +28,7 @@
 
 ### About The Project
 
-This is a form application built with HTML & CSS and JavaScript for the front and PHP for serving the form and then process the form submission and to email the contents of the form back to the user that fills it in. It is written in plain vanilla script without using any frameworks or libraries. <b>Note: it might take very long to receive the email due to the server speed of my hosting website, speed might differ depending which hosting website you use.</b>
+This is a form application built with HTML & CSS and JavaScript for the front and PHP for serving the form and then process the form submission and to email the contents of the form back to the user that fills it in. It is written in plain vanilla script without using any frameworks or libraries. <b>Note: it might take very long to receive the email due to the server speed of my hosting website, speed depends on hosting website you use.</b>
 
 ### Built With
 
@@ -38,13 +38,14 @@ This is a form application built with HTML & CSS and JavaScript for the front an
 ### Features
 
 - Form validation both in browser and on the server
+- Cleanses user inputs to deal with unsafe input scripts
 - Attachment allowed: .pdf, .png, .jpg, .jpeg, .pdf, .doc, .docx
 - App is responsive to all screen sizes
 
 ### Future work
 
-- Create user login to their reddit account
-- Allow user to comment on posts
+- Improve UX by adding more dynamic CSS
+- Remove page redirection and displays alert box instead to inform user if the email is sent
 
 ### Contact
 
