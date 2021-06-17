@@ -3,7 +3,7 @@
   <h3 align="center">ContactForm</h3>
   <p align="center">
     <a href="https://kwanchan.co/form/">
-      <img src='display.png' width='50%'>
+      <img src='display.png' width='100%'>
     </a>
   </p>
   <p align="center">
